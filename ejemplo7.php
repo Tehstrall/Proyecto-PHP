@@ -1,6 +1,17 @@
 <?php
-    $numeroUno =5;
-    $numeroDos =10;
+    $arraysNumeros = array(54,55,67,76);
+
+    $tamañoCicloUno = count($arraysNumeros)-1;
+
+    for ($i=0; $i < $tamañoCicloUno; $i++) { 
+        for ($j=$i+1; $j < count($arraysNumeros); $j++) { 
+            $numeroUno = $arraysNumeros[$i];
+            $numeroDos = $arraysNumeros[$j];
+
+            if (esPrimoRelativo($numeroUno, $numeroDos))
+                echo $numeroUno.' y '.$numeroDos.' Son primos relaitivos <br>';
+        }
+    }
 
     function esPrimoRelativo($numeroUno, $numeroDos){
 
