@@ -1,5 +1,5 @@
 <?php
-    $arraysNumeros = array(54,55,67,76);
+    $arraysNumeros = $_GET['arraysNumeros'];
 
     $tamañoCicloUno = count($arraysNumeros)-1;
 
