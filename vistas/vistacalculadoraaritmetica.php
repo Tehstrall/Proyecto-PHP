@@ -10,11 +10,11 @@
             $this->operadorDos = $operadorDos;
         }
 
-            
-        
-        function sumar($operador1, $operador2){
-            return $operador1 + $operador2;
+        function sumar ($operadorUno = '', $operadorDos = ''){
+            $operadorUno = empty($operadorUno) ? $operadorDos : $operadorUno;
+            $operadorDos = empty($operadorDos) ? $operadorDos : $operadorDos;
         }
+
 
         function restar($operador1, $operador2){
             return $operador1 - $operador2;
